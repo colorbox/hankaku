@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8550D0C8C7B0544B070287A9 /* Pods_Hankaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC18C29EBAB57E57E45095EC /* Pods_Hankaku.framework */; };
 		C0BD86D01FFE6E5A00E2A226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD86CF1FFE6E5A00E2A226 /* AppDelegate.swift */; };
 		C0BD86D21FFE6E5A00E2A226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD86D11FFE6E5A00E2A226 /* ViewController.swift */; };
 		C0BD86D51FFE6E5A00E2A226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BD86D31FFE6E5A00E2A226 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69261980F174E006733354C1 /* Pods-Hankaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hankaku.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hankaku/Pods-Hankaku.release.xcconfig"; sourceTree = "<group>"; };
+		9D8AE73668E4ED20EB047E05 /* Pods-Hankaku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hankaku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hankaku/Pods-Hankaku.debug.xcconfig"; sourceTree = "<group>"; };
+		AC18C29EBAB57E57E45095EC /* Pods_Hankaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hankaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD86CC1FFE6E5A00E2A226 /* Hankaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hankaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD86CF1FFE6E5A00E2A226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BD86D11FFE6E5A00E2A226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8550D0C8C7B0544B070287A9 /* Pods_Hankaku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54021D42F25CF84158E8E6E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC18C29EBAB57E57E45095EC /* Pods_Hankaku.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0BD86C31FFE6E5A00E2A226 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				C0BD86E31FFE6E5A00E2A226 /* HankakuTests */,
 				C0BD86EE1FFE6E5A00E2A226 /* HankakuUITests */,
 				C0BD86CD1FFE6E5A00E2A226 /* Products */,
+				FCC14F4A625381E194BDF5D5 /* Pods */,
+				54021D42F25CF84158E8E6E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = HankakuUITests;
 			sourceTree = "<group>";
 		};
+		FCC14F4A625381E194BDF5D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D8AE73668E4ED20EB047E05 /* Pods-Hankaku.debug.xcconfig */,
+				69261980F174E006733354C1 /* Pods-Hankaku.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0BD86F41FFE6E5A00E2A226 /* Build configuration list for PBXNativeTarget "Hankaku" */;
 			buildPhases = (
+				00203CDC3536A93BB16F18EF /* [CP] Check Pods Manifest.lock */,
 				C0BD86C81FFE6E5A00E2A226 /* Sources */,
 				C0BD86C91FFE6E5A00E2A226 /* Frameworks */,
 				C0BD86CA1FFE6E5A00E2A226 /* Resources */,
+				34F66456531C2E0C4B1A97C9 /* [CP] Embed Pods Frameworks */,
+				CB67D309EE012FC226D35F81 /* [CP] Copy Pods Resources */,
+				C0BD86FD1FFE754500E2A226 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -253,6 +281,71 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00203CDC3536A93BB16F18EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hankaku-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34F66456531C2E0C4B1A97C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hankaku/Pods-Hankaku-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0BD86FD1FFE754500E2A226 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		CB67D309EE012FC226D35F81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hankaku/Pods-Hankaku-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0BD86C81FFE6E5A00E2A226 /* Sources */ = {
@@ -424,6 +517,7 @@
 		};
 		C0BD86F51FFE6E5A00E2A226 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8AE73668E4ED20EB047E05 /* Pods-Hankaku.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +533,7 @@
 		};
 		C0BD86F61FFE6E5A00E2A226 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69261980F174E006733354C1 /* Pods-Hankaku.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
