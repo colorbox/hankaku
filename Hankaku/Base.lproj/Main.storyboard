@@ -26,11 +26,27 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IU7-MQ-xfC">
-                                <rect key="frame" x="170" y="118" width="46" height="30"/>
+                                <rect key="frame" x="167" y="118" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="convert"/>
                                 <connections>
                                     <action selector="convertHankaku:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4OJ-9q-FBa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlV-Cj-pSB">
+                                <rect key="frame" x="168" y="57" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="paste"/>
+                                <connections>
+                                    <action selector="pasteCopied:" destination="BYZ-38-t0r" eventType="touchUpInside" id="35L-wB-PcU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPH-YG-c6p">
+                                <rect key="frame" x="242" y="65" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="copy"/>
+                                <connections>
+                                    <action selector="copyWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0dB-Np-B3i"/>
                                 </connections>
                             </button>
                         </subviews>
