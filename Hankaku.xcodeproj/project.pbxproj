@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8550D0C8C7B0544B070287A9 /* Pods_Hankaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC18C29EBAB57E57E45095EC /* Pods_Hankaku.framework */; };
+		C070D68F20025BBC0054EE5B /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = C070D68E20025BBC0054EE5B /* fastlane */; };
 		C0BD86D01FFE6E5A00E2A226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD86CF1FFE6E5A00E2A226 /* AppDelegate.swift */; };
 		C0BD86D21FFE6E5A00E2A226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD86D11FFE6E5A00E2A226 /* ViewController.swift */; };
 		C0BD86D51FFE6E5A00E2A226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BD86D31FFE6E5A00E2A226 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		69261980F174E006733354C1 /* Pods-Hankaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hankaku.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hankaku/Pods-Hankaku.release.xcconfig"; sourceTree = "<group>"; };
 		9D8AE73668E4ED20EB047E05 /* Pods-Hankaku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hankaku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hankaku/Pods-Hankaku.debug.xcconfig"; sourceTree = "<group>"; };
 		AC18C29EBAB57E57E45095EC /* Pods_Hankaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hankaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C070D68E20025BBC0054EE5B /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
 		C0BD86CC1FFE6E5A00E2A226 /* Hankaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hankaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD86CF1FFE6E5A00E2A226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BD86D11FFE6E5A00E2A226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		C0BD86C31FFE6E5A00E2A226 = {
 			isa = PBXGroup;
 			children = (
+				C070D68E20025BBC0054EE5B /* fastlane */,
 				C0BD86CE1FFE6E5A00E2A226 /* Hankaku */,
 				C0BD86E31FFE6E5A00E2A226 /* HankakuTests */,
 				C0BD86EE1FFE6E5A00E2A226 /* HankakuUITests */,
@@ -222,6 +225,11 @@
 					C0BD86CB1FFE6E5A00E2A226 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					C0BD86DF1FFE6E5A00E2A226 = {
 						CreatedOnToolsVersion = 9.2;
@@ -262,6 +270,7 @@
 			files = (
 				C0BD86DA1FFE6E5A00E2A226 /* LaunchScreen.storyboard in Resources */,
 				C0BD86D71FFE6E5A00E2A226 /* Assets.xcassets in Resources */,
+				C070D68F20025BBC0054EE5B /* fastlane in Resources */,
 				C0BD86D51FFE6E5A00E2A226 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,7 +533,7 @@
 				DEVELOPMENT_TEAM = 8NY8PHM374;
 				INFOPLIST_FILE = Hankaku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = colorboxstudio.Hankaku;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colorboxstudio.hankaku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -540,7 +549,7 @@
 				DEVELOPMENT_TEAM = 8NY8PHM374;
 				INFOPLIST_FILE = Hankaku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = colorboxstudio.Hankaku;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colorboxstudio.hankaku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
