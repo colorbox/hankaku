@@ -4,4 +4,5 @@ target 'Hankaku' do
   use_frameworks!
 
   pod 'SwiftLint'
+  pod 'Firebase/Core'
 end
