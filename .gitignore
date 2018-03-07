@@ -24,4 +24,12 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+## dotenv
+.env
+
+## fastlane 
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
 

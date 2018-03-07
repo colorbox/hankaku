@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8550D0C8C7B0544B070287A9 /* Pods_Hankaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC18C29EBAB57E57E45095EC /* Pods_Hankaku.framework */; };
+		C04B7A3B20501869009D82AC /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = C04B7A3A20501869009D82AC /* Gemfile */; };
+		C04B7A412050236C009D82AC /* .env.default.example in Resources */ = {isa = PBXBuildFile; fileRef = C04B7A402050236C009D82AC /* .env.default.example */; };
+		C04B7A4320502399009D82AC /* .env.default in Resources */ = {isa = PBXBuildFile; fileRef = C04B7A4220502399009D82AC /* .env.default */; };
 		C070D68F20025BBC0054EE5B /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = C070D68E20025BBC0054EE5B /* fastlane */; };
 		C08DCBD020485CFD003AA1B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C08DCBCF20485CFD003AA1B0 /* GoogleService-Info.plist */; };
 		C0BD86D01FFE6E5A00E2A226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD86CF1FFE6E5A00E2A226 /* AppDelegate.swift */; };
@@ -40,6 +43,9 @@
 		69261980F174E006733354C1 /* Pods-Hankaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hankaku.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hankaku/Pods-Hankaku.release.xcconfig"; sourceTree = "<group>"; };
 		9D8AE73668E4ED20EB047E05 /* Pods-Hankaku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hankaku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hankaku/Pods-Hankaku.debug.xcconfig"; sourceTree = "<group>"; };
 		AC18C29EBAB57E57E45095EC /* Pods_Hankaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hankaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04B7A3A20501869009D82AC /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		C04B7A402050236C009D82AC /* .env.default.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .env.default.example; sourceTree = "<group>"; };
+		C04B7A4220502399009D82AC /* .env.default */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .env.default; sourceTree = "<group>"; };
 		C070D68E20025BBC0054EE5B /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
 		C08DCBCF20485CFD003AA1B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C0BD86CC1FFE6E5A00E2A226 /* Hankaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hankaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +100,9 @@
 		C0BD86C31FFE6E5A00E2A226 = {
 			isa = PBXGroup;
 			children = (
+				C04B7A3A20501869009D82AC /* Gemfile */,
+				C04B7A402050236C009D82AC /* .env.default.example */,
+				C04B7A4220502399009D82AC /* .env.default */,
 				C070D68E20025BBC0054EE5B /* fastlane */,
 				C0BD86CE1FFE6E5A00E2A226 /* Hankaku */,
 				C0BD86E31FFE6E5A00E2A226 /* HankakuTests */,
@@ -271,10 +280,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C04B7A412050236C009D82AC /* .env.default.example in Resources */,
+				C04B7A3B20501869009D82AC /* Gemfile in Resources */,
 				C0BD86DA1FFE6E5A00E2A226 /* LaunchScreen.storyboard in Resources */,
 				C0BD86D71FFE6E5A00E2A226 /* Assets.xcassets in Resources */,
 				C08DCBD020485CFD003AA1B0 /* GoogleService-Info.plist in Resources */,
 				C070D68F20025BBC0054EE5B /* fastlane in Resources */,
+				C04B7A4320502399009D82AC /* .env.default in Resources */,
 				C0BD86D51FFE6E5A00E2A226 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
