@@ -1,0 +1,23 @@
+update_fastlane
+min_fastlane_version("2.73.0")
+default_platform(:ios)
+
+platform :ios do
+  before_all do
+    cocoapods
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    run_tests
+  end
+
+  desc "Deploy a new version to the App Store"
+  lane :release do
+    match(type: "appstore")
+    gym(scheme: "Hankaku")
+    sync_code_signing(type: "appstore")
+    build_app
+    upload_to_app_store(force: true)
+  end
+end
